@@ -1,13 +1,22 @@
 // max-width 1430px
 @media (max-width: 1430px)
    .hero
-      max-width: 95%
-      margin: auto       
+      max-width: 95%   
 // max-width 1200px
 @media (max-width: 1200px)
    .nav-bar
       padding-left: 4% 
       padding-right: 4%  
+   .collaction
+      &__wrap
+         flex-direction: column
+         align-items: center
+      &__right
+         display: flex
+         flex-direction: column
+         align-items: flex-start
+      &__left
+         margin-right: 0
 // max-width 991px
 @media (max-width: 991px)
    .nav-bar
@@ -22,6 +31,7 @@
       &__btn
          &:hover
             background-color: $dark  
+
 // max-width 767px
 @media (max-width: 767px)
    .header
@@ -66,6 +76,16 @@
          margin-bottom: 36px
       &__btn
          margin-bottom: 40px
+   .collaction
+      &__container
+         max-width: 672px
+      &__left
+         margin-bottom: 40px
+      &__right
+         width: 100%
+      &__text
+         margin-bottom: 24px
+         max-width: 100%
 // max-width 740px
 @media (max-width: 740px)
    .hero
@@ -86,6 +106,17 @@
          line-height: 22px
       &__bottom
          flex-wrap: wrap
+   .collaction
+      &__container
+         max-width: 540px
+      &__img-wrap-2,&__img-wrap-3
+         max-width: 180px
+         max-height: auto
+      &__wrap-2
+         justify-content: center
+      &__img-wrap-1
+         margin-right: 15px
+// max-width 500px
 @media (max-width: 500px)
    .hero
       &__bottom
@@ -133,3 +164,44 @@
       &__btn
          margin-bottom: 22px
          width: 100%
+   .collaction
+      margin-bottom: 110px
+      &__container
+         max-width: 290px
+      &__left
+         display: flex
+         flex-direction: column
+         align-items: center
+         margin-bottom: 36px
+      &__right
+         align-items: center
+         text-align: center
+      &__img-wrap-1
+         margin-right: 0
+         max-width: 290px
+         max-height: 300px
+         overflow: hidden
+         border-radius: 8px
+         margin-bottom: 14px
+      &__img-wrap-2,&__img-wrap-3
+         max-width: 138px
+         max-height: 97px
+      &__wrap-2
+         width: 100%
+         flex-direction: row
+         justify-content: space-between
+      &__img
+         &--mobile
+            width: 100%
+            max-height: 100%
+            margin-top: -20%
+      &__title
+         font-size: 28px
+         line-height: 36px
+         margin-bottom: 20px
+      &__text
+         font-size: 16px
+         line-height: 28px
+      &__link
+         display: none
+            

@@ -18,31 +18,33 @@
    <header class="header">
       <div class="container header__container">
          <nav class="nav-bar">
-            <div class="navbar__logo">
+            <div class="nav-bar__logo">
                <a href="index.html">
                   <img src="img/logo.svg" alt="icon: ehya">
                </a>
             </div>
-            <ul class="nav-bar__menu">
-               <li class="nav-bar__item">
-                  <a class="nav-bar__link" href="#">Главная</a>
-               </li>
-               <li class="nav-bar__item">
-                  <a class="nav-bar__link" href="#">Новинки</a>
-               </li>
-               <li class="nav-bar__item">
-                  <a class="nav-bar__link" href="#">Тренды</a>
-               </li>
-               <li class="nav-bar__item">
-                  <a class="nav-bar__link" href="#">Отзывы</a>
-               </li>
-               <li class="nav-bar__item">
-                  <a class="nav-bar__link" href="#">Контакты</a>
-               </li>
+            <div class="nav-bar__wrap">
+               <ul class="nav-bar__menu">
+                  <li class="nav-bar__item">
+                     <a class="nav-bar__link" href="#">Главная</a>
+                  </li>
+                  <li class="nav-bar__item">
+                     <a class="nav-bar__link" href="#">Новинки</a>
+                  </li>
+                  <li class="nav-bar__item">
+                     <a class="nav-bar__link" href="#">Тренды</a>
+                  </li>
+                  <li class="nav-bar__item">
+                     <a class="nav-bar__link" href="#">Отзывы</a>
+                  </li>
+                  <li class="nav-bar__item">
+                     <a class="nav-bar__link" href="#">Контакты</a>
+                  </li>
+               </ul>
                <button class="nav-bar__btn">
-                  <a class="nav-bar__login" href="#">Войти</a>
+                  <span class="nav-bar__login">Войти</span>
                </button>
-            </ul>
+            </div>
             <button data-toggle="modal" class="burger-menu">
                <span class="burger-menu__line"></span>
                <span class="burger-menu__line"></span>
@@ -63,24 +65,24 @@
          <div class="modal__wrapper">
             <ul class="modal__menu">
                <li class="modal__item">
-                  <a class="nav-bar__link" href="#">Главная</a>
+                  <a class="modal__link" href="#">Главная</a>
                </li>
                <li class="modal__item">
-                  <a class="nav-bar__link" href="#">Новинки</a>
+                  <a class="modal__link" href="#">Новинки</a>
                </li>
                <li class="modal__item">
-                  <a class="nav-bar__link" href="#">Тренды</a>
+                  <a class="modal__link" href="#">Тренды</a>
                </li>
                <li class="modal__item">
-                  <a class="nav-bar__link" href="#">Отзывы</a>
+                  <a class="modal__link" href="#">Отзывы</a>
                </li>
                <li class="modal__item">
-                  <a class="nav-bar__link" href="#">Контакты</a>
+                  <a class="modal__link" href="#">Контакты</a>
                </li>
-               <button class="modal__btn">
-                  <a class="nav-bar__login" href="#">Войти</a>
-               </button>
             </ul>
+            <button class="modal__btn">
+               <span class="modal__login">Войти</span>
+            </button>
          </div>
          <!-- /.modal__wrapper -->
       </div>
@@ -167,6 +169,136 @@
       <!-- /.container -->
    </section>
    <!-- /.collection -->
+
+   <!-- Trends -->
+   <section class="trends">
+      <div class="container trends__container">
+         <div class="trends__wrap">
+            <div class="trends__top">
+               <h2 class="section-title trends__title">Тренды</h2>
+               <div class="trends__tabs">
+                  <span data-tab="new" class="trends__tab trends__active js-tab-trigger">Новинки</span>
+                  <span data-tab="best" class="trends__tab js-tab-trigger">Лучшее</span>
+                  <span data-tab="soon" class="trends__tab js-tab-trigger">Скоро</span>
+               </div>
+               <!-- /.trends__tabs -->
+            </div>
+            <!-- /.trends__top -->
+            <div class="trends__bottom">
+               <div class="trends__card trends__active js-tab-content" data-tab="new">
+                  <div class="trends__img-wrap">
+                     <img src="img/trends/card-img-1.jpg" alt="ico: trends iamge" class="trends__img">
+                  </div>
+                  <span class="trends__sub-title">Minimalist Style</span>
+                  <div class="trends__buy">
+                     <span class="trends__price">$25.7</span>
+                     <a class="trends__link" href="#">
+                        <img src="img/trends/shopping-ico.svg" alt="ico: shopping" class="trends__shoping-ico">
+                     </a>
+                  </div>
+                  <!-- /.trends__buy-->
+               </div>
+               <!-- /.trends__card -->
+               <div class="trends__card trends__active js-tab-content" data-tab="new">
+                  <div class="trends__img-wrap">
+                     <img src="img/trends/card-img-2.jpg" alt="ico: trends iamge" class="trends__img">
+                  </div>
+                  <span class="trends__sub-title">Luxury Gown</span>
+                  <div class="trends__buy">
+                     <span class="trends__price">$30.6</span>
+                     <a class="trends__link" href="#">
+                        <img src="img/trends/shopping-ico.svg" alt="ico: shopping" class="trends__shoping-ico">
+                     </a>
+                  </div>
+                  <!-- /.trends__buy-->
+               </div>
+               <!-- /.trends__card -->
+               <div class="trends__card trends__active js-tab-content" data-tab="new">
+                  <div class="trends__img-wrap">
+                     <img src="img/trends/card-img-3.jpg" alt="ico: trends iamge" class="trends__img">
+                  </div>
+                  <span class="trends__sub-title">Full Coloristy</span>
+                  <div class="trends__buy">
+                     <span class="trends__price">$25.7</span>
+                     <a class="trends__link" href="#">
+                        <img src="img/trends/shopping-ico.svg" alt="ico: shopping" class="trends__shoping-ico">
+                     </a>
+                  </div>
+                  <!-- /.trends__buy-->
+               </div>
+               <!-- /.trends__card -->
+               <div class="trends__card trends__active js-tab-content" data-tab="best">
+                  <div class="trends__img-wrap">
+                     <img src="img/trends/card-img-4.jpg" alt="ico: trends iamge" class="trends__img">
+                  </div>
+                  <span class="trends__sub-title">Pinky Winky</span>
+                  <div class="trends__buy">
+                     <span class="trends__price">$109</span>
+                     <a class="trends__link" href="#">
+                        <img src="img/trends/shopping-ico.svg" alt="ico: shopping" class="trends__shoping-ico">
+                     </a>
+                  </div>
+                  <!-- /.trends__buy-->
+               </div>
+               <!-- /.trends__card -->
+               <div class="trends__card trends__active js-tab-content" data-tab="soon">
+                  <div class="trends__img-wrap best">
+                     <img src="img/trends/card-img-5.jpg" alt="ico: trends iamge" class="trends__img">
+                  </div>
+                  <span class="trends__sub-title">Holiday Vibes</span>
+                  <div class="trends__buy">
+                     <span class="trends__price">$51.2</span>
+                     <a class="trends__link" href="#">
+                        <img src="img/trends/shopping-ico.svg" alt="ico: shopping" class="trends__shoping-ico">
+                     </a>
+                  </div>
+                  <!-- /.trends__buy-->
+               </div>
+               <!-- /.trends__card -->
+               <div class="trends__card trends__active js-tab-content" data-tab="new">
+                  <div class="trends__img-wrap">
+                     <img src="img/trends/card-img-6.jpg" alt="ico: trends iamge" class="trends__img">
+                  </div>
+                  <span class="trends__sub-title">Swaggie Shaggy</span>
+                  <div class="trends__buy">
+                     <span class="trends__price">$81.3</span>
+                     <a class="trends__link" href="#">
+                        <img src="img/trends/shopping-ico.svg" alt="ico: shopping" class="trends__shoping-ico">
+                     </a>
+                  </div>
+                  <!-- /.trends__buy-->
+               </div>
+               <!-- /.trends__card -->
+               <div class="trends__card trends__active js-tab-content" data-tab="new">
+                  <div class="trends__img-wrap">
+                     <img src="img/trends/card-img-7.jpg" alt="ico: trends iamge" class="trends__img">
+                  </div>
+                  <span class="trends__sub-title">Red Formal</span>
+                  <div class="trends__buy">
+                     <span class="trends__price">$66.8</span>
+                     <a class="trends__link" href="#">
+                        <img src="img/trends/shopping-ico.svg" alt="ico: shopping" class="trends__shoping-ico">
+                     </a>
+                  </div>
+                  <!-- /.trends__buy-->
+               </div>
+               <!-- /.trends__card -->
+               <div class="trends__card trends__active" data-tab="new">
+                  <div class="trends__more">
+                     <img src="img/trends/plus-ico.svg" alt="ico: plus" class="trends__plus">
+                     <span class="trends__more-text">Смотреть<br> больше коллекций</span>
+                  </div>
+                  <!-- /.trends__see-more -->
+               </div>
+               <!-- /.trends__card -->
+            </div>
+            <!-- /.trends__bottom -->
+         </div>
+         <!-- /.trends__wrap -->
+      </div>
+      <!-- /.container -->
+   </section>
+   <!-- /.trends -->
 
    <!-- jQuery -->
    <script src="js/jquery-3.5.1.min.js"></script>

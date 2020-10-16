@@ -18,4 +18,22 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalMain.removeClass("modal__main--visible");
   }
+  // Tabs
+  // var trendsTab = $(".trends__tab");
+  // var trendsCard = $(".trends__card");
+
+  // trendsTab.on("click", function (event) {
+  //   var activeCard = $(this).attr("data-target");
+  //   $(activeCard).toggleClass("trends__active");
+  // });
+
+  $(".js-tab-trigger").on("click", function () {
+    var tabName = $(this).data("tab");
+    console.log(tabName);
+    var tab = $('.js-tab-content[data-tab="' + tabName + '"]');
+    $(".js-tab-trigger.trends__active").removeClass("trends__active");
+    $(this).addClass("trends__active");
+    $(".js-tab-content").removeClass("trends__active");
+    tab.addClass("trends__active");
+  });
 });

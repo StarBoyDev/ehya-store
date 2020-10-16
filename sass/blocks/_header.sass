@@ -1,11 +1,14 @@
 .header
-   margin-bottom: 36px
+   margin-top: 26px
+   margin-bottom: 55px
 .nav-bar
    display: flex
    justify-content: space-between
    align-items: center
    &__logo
-      max-width: 90px   
+      max-width: 90px
+   &__wrap
+      display: flex   
    &__menu 
       display: flex
       list-style: none
@@ -31,6 +34,10 @@
       filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1))
       cursor: pointer
       background-color: #fff
+      overflow: hidden
+      transition: transform .5s ease
+      &:hover
+         transform: scale(1.1)
    &__login 
       font-style: normal
       font-weight: bold

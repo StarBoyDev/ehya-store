@@ -36,4 +36,16 @@ $(document).ready(function () {
     $(".js-tab-content").removeClass("trends__active");
     tab.addClass("trends__active");
   });
+
+  // Swiper slider
+  var mySwiper = new Swiper(".swiper-container", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
 });

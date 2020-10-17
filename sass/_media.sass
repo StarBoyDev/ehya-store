@@ -101,6 +101,7 @@
          margin-bottom: 24px
          max-width: 100%
    .trends
+      margin-bottom: 45px
       &__container
          max-width: 608px
       &__top
@@ -108,9 +109,28 @@
       &__bottom
          justify-content: space-between
       &__card
-         margin-bottom: 43px
+         margin-bottom: 50px
       &__wrap
          width: 100%
+      &__img-wrap
+         width: 280px
+         margin-bottom: 15px
+      &__more
+         width: 280px
+      &__sub-title
+         margin-left: 11px
+      &__price
+         margin-left: 11px
+      &__shoping-ico
+         margin-right: 11px
+   .swiper-container
+      max-width: 630px
+      height: 415px
+   .testimonial
+      &__container
+         margin: auto
+      &__img-wrap
+         margin-bottom: 32px
 // max-width 740px
 @media (max-width: 740px)
    .hero
@@ -134,14 +154,19 @@
    .collaction
       &__container
          max-width: 540px
-      &__img-wrap-2,&__img-wrap-3
-         max-width: 180px
-         max-height: auto
+      &__left
+         display: flex
+         flex-direction: column
       &__wrap-2
          justify-content: center
       &__img-wrap-1
          margin-right: 15px
-@media (max-width: 540px)
+         margin-bottom: 30px
+   .swiper-container 
+      height: 510px
+
+// max-width 570px
+@media (max-width: 570px)
    .trends
       &__bottom
          justify-content: center   
@@ -152,6 +177,8 @@
          flex-direction: column
       &__info
          margin-bottom: 16px
+   .swiper-container 
+         height: 650px
 // max-width 320px
 @media (max-width: 320px)
    .header
@@ -288,3 +315,24 @@
          font-size: 17px
          line-height: 20px
          margin-bottom: 20px        
+   .swiper-container
+      height: 555px
+   .testimonial
+      &__container
+         max-width: 290px
+      &__img-wrap
+         max-width: 70px
+         max-height: 81px 
+         margin-bottom: 13px
+      &__text
+         font-style: normal
+         font-weight: normal
+         font-size: 18px
+         line-height: 36px
+         color: $dark
+         font-family: "HKGrotesk-400", sans-serif
+         font-feature-settings: "locl" 0
+         margin-bottom: 0
+      &__client
+         width: 240px
+         margin: auto

@@ -28,6 +28,36 @@
          justify-content: space-evenly
       &__title
          margin-bottom: 28px
+   .story
+      &__container
+         margin: auto
+      &__slide
+         flex-direction: column
+         align-items: center
+      &__right
+         justify-content: space-evenly
+      &__left
+         text-align: center
+         margin-right: 0
+      &__badge
+         margin: auto
+         margin-bottom: 20px
+      &__title
+         margin-right: 0
+         margin: auto
+         margin-bottom: 20px
+         max-width: 100%
+      &__text
+         margin-bottom: 100px
+         width: 600px
+   .slide-button--next
+      top: 220px
+      right: 42%
+      left: auto
+   .slide-button--prev
+      top: 220px
+      left: 42%
+      right: auto
 // max-width 991px
 @media (max-width: 991px)
    .nav-bar
@@ -123,18 +153,37 @@
          margin-left: 11px
       &__shoping-ico
          margin-right: 11px
-   .swiper-container
-      max-width: 630px
-      height: 415px
    .testimonial
+      &__swiper-container
+         max-width: 630px
+         height: 415px
       &__container
          margin: auto
       &__img-wrap
          margin-bottom: 32px
+   .story
+      &__container
+         max-width: 728px
+      &__img-wrap
+         max-width: 322px
+      &__right
+         justify-content: space-around
 // max-width 740px
 @media (max-width: 740px)
    .hero
       border-radius: 0
+// max-width 764
+@media (max-width: 764px)
+   .story
+      &__right
+         flex-direction: column
+      &__item
+         margin: auto
+         margin-bottom: 20px
+   .slide-button--next
+      right: 40%
+   .slide-button--prev
+      left: 40%
 // max-width 576px
 @media (max-width: 576px)
    .hero
@@ -162,14 +211,24 @@
       &__img-wrap-1
          margin-right: 15px
          margin-bottom: 30px
-   .swiper-container 
-      height: 510px
+   .testimonial
+      &__swiper-container 
+         height: 510px
+   .story
+      &__container
+         max-width: 540px
+      &__text
+         width: auto
 
 // max-width 570px
 @media (max-width: 570px)
    .trends
       &__bottom
-         justify-content: center   
+         justify-content: center
+   .slide-button--next
+      right: 36%   
+   .slide-button--prev
+      left: 36% 
 // max-width 500px
 @media (max-width: 500px)
    .hero
@@ -177,8 +236,15 @@
          flex-direction: column
       &__info
          margin-bottom: 16px
-   .swiper-container 
+   .testimonial
+      &__swiper-container 
          height: 650px
+   .slide-button--next
+      right: 34%
+      top: 280px   
+   .slide-button--prev
+      left: 34% 
+      top: 280px   
 // max-width 320px
 @media (max-width: 320px)
    .header
@@ -315,9 +381,9 @@
          font-size: 17px
          line-height: 20px
          margin-bottom: 20px        
-   .swiper-container
-      height: 555px
    .testimonial
+      &__swiper-container
+         height: 555px
       &__container
          max-width: 290px
       &__img-wrap
@@ -336,3 +402,29 @@
       &__client
          width: 240px
          margin: auto
+   .story
+      &__container
+         max-width: 290px
+      &__title
+         font-size: 28px
+         line-height: 36px
+         margin-bottom: 16px
+      &__text
+         font-size: 16px
+         line-height: 28px
+         margin-bottom: 110px
+      &__img-wrap
+         max-width: 270px
+         margin: auto
+      &__blog
+         font-size: 20px
+         line-height: 24px
+         margin-bottom: 16px
+      &__item
+         margin-bottom: 24px
+   .slide-button--next
+      right: 28%
+      top: 215px   
+   .slide-button--prev
+      left: 28%
+      top: 215px   

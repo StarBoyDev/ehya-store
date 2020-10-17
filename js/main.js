@@ -18,15 +18,8 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalMain.removeClass("modal__main--visible");
   }
+
   // Tabs
-  // var trendsTab = $(".trends__tab");
-  // var trendsCard = $(".trends__card");
-
-  // trendsTab.on("click", function (event) {
-  //   var activeCard = $(this).attr("data-target");
-  //   $(activeCard).toggleClass("trends__active");
-  // });
-
   $(".js-tab-trigger").on("click", function () {
     var tabName = $(this).data("tab");
     console.log(tabName);
@@ -37,8 +30,8 @@ $(document).ready(function () {
     tab.addClass("trends__active");
   });
 
-  // Swiper slider
-  var mySwiper = new Swiper(".swiper-container", {
+  // Swiper Testimonial
+  var testimonialSwiper = new Swiper(".testimonial__swiper-container", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
@@ -46,6 +39,19 @@ $(document).ready(function () {
     // If we need pagination
     pagination: {
       el: ".swiper-pagination",
+    },
+  });
+
+  // Swiper Story
+  var storySwiper = new Swiper(".story__swiper-container", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".slide-button--next",
+      prevEl: ".slide-button--prev",
     },
   });
 });

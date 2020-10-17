@@ -503,13 +503,17 @@
       <div class="container">
          <div class="newsletter__wrap">
             <div class="newsletter__info">
-
+               <h2 class="section-title newsletter__title">Подпишитесь</h2>
+               <p class="newsletter__text">
+                  Напишите свой адрес электронной почты. Мы будем присылать вам новости из
+                  мира моды.
+               </p>
             </div>
             <!-- /.newsletter__info -->
-            <form action="" class="newsletter__form">
-               <img src="" alt="ico: ">
-               <input class="newsletter__input" type="email" placeholder="">
-               <button class="newsletter__button"></button>
+            <form action="send.php" method="POST" class="newsletter__form">
+               <img class="newsletter__ico" src="img/newsletter-ico.svg" alt="ico: newsletter">
+               <input class="newsletter__input" name="email" type="email" placeholder="Ваш Emaill">
+               <button class="btn newsletter__button">Подписаться</button>
             </form>
          </div>
          <!-- /.newsletter__wrap -->

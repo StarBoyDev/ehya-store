@@ -4,6 +4,7 @@
    background-size: cover
    padding-top: 100px
    padding-bottom: 100px
+   margin-bottom: 128px
    &__wrap
       display: flex
       align-items: center
@@ -26,21 +27,30 @@
       color: #fff
       max-width: 420px
    &__form
-      padding-top: 17px
-      padding-bottom: 17px
       background-color: #fff
-      border-radius: 8px
-      width: 447px
+      max-width: 447px
+      height: 56px
       position: relative
+      border-radius: 8px
    &__input
       border: none
+      height: 100%
+      padding: 0
+      border-radius: 8px
+      padding-left: 47px
+      width: 400px
       &:focus
          outline: none
-   &__ico
-      margin-left: 20px
-      margin-right: 12px
    &__button
-      padding: 11px 27px 
+      padding: 11px 27px
+      height: 47px 
       position: absolute
       right: 3px
-      top: 3px
+      top: 4px
+   &__ico
+      position: absolute
+      top: 20px
+      left: 20px
+      width: 16px
+      height: 18px
+      

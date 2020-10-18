@@ -58,6 +58,21 @@
       top: 220px
       left: 42%
       right: auto
+   .newsletter
+      &__container
+         max-width: 447px
+      &__wrap
+         justify-content: space-evenly
+         flex-wrap: wrap
+         text-align: center
+      &__info
+         margin-right: 0
+      &__text
+         margin-bottom: 14px
+   .footer
+      &__wrap
+         justify-content: center
+
 // max-width 991px
 @media (max-width: 991px)
    .nav-bar
@@ -72,6 +87,15 @@
       &__btn
          &:hover
             background-color: $dark  
+   .footer
+      &__container
+         max-width: 960px
+// max-width 885px
+@media (max-width: 885px)
+   .newsletter
+      &__info
+         margin-bottom: 14px
+         text-align: center
 // max-width 767px
 @media (max-width: 767px)
    .header
@@ -168,6 +192,16 @@
          max-width: 322px
       &__right
          justify-content: space-around
+   .newsletter
+      &__container
+         max-width: 447px
+         margin: auto
+   .footer
+      &__container
+         max-width: 672px
+      &__block
+         margin-bottom: 48px
+         
 // max-width 740px
 @media (max-width: 740px)
    .hero
@@ -184,6 +218,15 @@
       right: 40%
    .slide-button--prev
       left: 40%
+// max-width 674px
+@media (max-width: 674px)
+   .footer
+      &__wrap
+         flex-wrap: wrap
+         justify-content: flex-start
+         flex-direction: column
+      &__right
+         flex-direction: column
 // max-width 576px
 @media (max-width: 576px)
    .hero
@@ -219,6 +262,15 @@
          max-width: 540px
       &__text
          width: auto
+   .newsletter
+      &__form
+         width: 100%
+         overflow: hidden
+      &__input
+         width: 100%
+   .footer
+      &__container
+         max-width: 540px
 
 // max-width 570px
 @media (max-width: 570px)
@@ -428,3 +480,54 @@
    .slide-button--prev
       left: 28%
       top: 215px   
+   .newsletter
+      &__container
+         max-width: 280px
+      padding-top: 64px
+      padding-bottom: 48px
+      &__title
+         font-size: 28px
+         line-height: 36px
+         margin-bottom: 36px
+      &__text
+         font-size: 16px
+         line-height: 28px
+      &__form
+         overflow: visible
+         width: 280px
+      &__input
+         width: 230px
+         padding-left: 50px
+      &__button
+         margin-top: 10px
+         position: static
+         width: 100%
+   .footer
+      margin-bottom: 73px
+      &__container
+         max-width: 290px
+      &__wrap
+         flex-direction: column-reverse
+      &__info
+         text-align: center
+         margin-right: 0
+         margin: auto
+      &__logo
+         margin: auto
+         margin-bottom: 16px
+      &__title
+         font-size: 16px
+         line-height: 22px
+         margin-bottom: 20px
+      &__link
+         font-size: 14px
+         line-height: 20px
+         margin-bottom: 15px
+      &__block
+         margin-bottom: 30px
+      &__contacts
+         margin-bottom: 0
+      &__right
+         margin-bottom: 30px
+      &__text
+         margin-bottom: 16px

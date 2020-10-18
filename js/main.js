@@ -54,4 +54,25 @@ $(document).ready(function () {
       prevEl: ".slide-button--prev",
     },
   });
+
+  // Form validate
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        email: {
+          required:
+            "Нам нужен ваш адрес электронной почты, чтобы с вами связаться",
+          email:
+            "Ваш адрес электронной почты должен быть в формате name@domain.com",
+        },
+      },
+      rules: {
+        email: {
+          required: true,
+          email: true,
+        },
+      },
+    });
+  });
 });

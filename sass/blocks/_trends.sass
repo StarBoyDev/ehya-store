@@ -1,10 +1,12 @@
 .trends
-   margin-bottom: 110px
+   margin-bottom: 195px
    &__top
       display: flex
       justify-content: space-between
       align-items: center
       margin-bottom: 48px
+   &__tabs
+      display: flex
    &__tab
       margin-right: 38px
       font-style: normal
@@ -25,9 +27,10 @@
       margin-bottom: 50px
       display: flex
       flex-direction: column
-      visibility: hidden
+   &__tab-content
+      display: none
    &__active
-      visibility: visible
+      display: block
    &__img-wrap
       width: 260px
       max-height: 350px

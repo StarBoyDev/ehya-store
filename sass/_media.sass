@@ -90,6 +90,31 @@
    .footer
       &__container
          max-width: 960px
+   .trends
+      &__more
+         &:hover
+            transform: scale(1.0)
+   .story
+      &__link
+         &:hover
+            transform: scale(1.0)
+   .nav-bar
+      &__btn
+         &:hover
+            transform: scale(1.0)
+   .newsletter
+      &__button
+         &:hover
+            background-color: $dark
+   .footer
+      &__link
+         &:hover
+            color: $dark
+      &__socials
+         &-ico
+            &:hover
+               transform: scale(1.0)
+            
 // max-width 885px
 @media (max-width: 885px)
    .newsletter
@@ -155,7 +180,7 @@
          margin-bottom: 24px
          max-width: 100%
    .trends
-      margin-bottom: 45px
+      margin-bottom: 620px
       &__container
          max-width: 608px
       &__top
@@ -178,29 +203,59 @@
       &__shoping-ico
          margin-right: 11px
    .testimonial
+      margin-bottom: 145px
       &__swiper-container
          max-width: 630px
-         height: 415px
+         height: 420px
       &__container
          margin: auto
       &__img-wrap
          margin-bottom: 32px
    .story
+      margin-bottom: 78px
       &__container
          max-width: 728px
       &__img-wrap
          max-width: 322px
       &__right
-         justify-content: space-around
+         justify-content: space-evenly
+      &__text
+         margin-bottom: 130px
+      &__blog
+         padding-left: 0
+      &__link
+         padding-left: 0
    .newsletter
+      padding-top: 65px
+      padding-bottom: 80px
+      margin-bottom: 67px
       &__container
          max-width: 447px
          margin: auto
+      &__title
+         margin-bottom: 18px
+      &__text
+         margin-bottom: 40px
    .footer
       &__container
          max-width: 672px
       &__block
          margin-bottom: 48px
+      &__info
+         margin-right: 0px
+         max-width: 280px
+         width: 100%
+      &__text
+         margin-bottom: 28px
+      &__block
+         margin-bottom: 25px
+   .slide-button
+      &--next
+         top: 240px
+      &--prev
+         top: 240px
+         left: 40%
+
          
 // max-width 740px
 @media (max-width: 740px)
@@ -383,6 +438,7 @@
       &__link
          display: none
    .trends
+      margin-bottom: 360px
       &__container
          max-width: 290px
          margin: auto
@@ -400,8 +456,8 @@
       &__bottom
          justify-content: space-between
       &__img-wrap
-         max-width: 140px
-         max-height: 170px
+         width: 140px
+         height: 170px
          margin-bottom: 13px
       &__card
          margin-bottom: 15px
@@ -434,6 +490,7 @@
          line-height: 20px
          margin-bottom: 20px        
    .testimonial
+      margin-bottom: 100px
       &__swiper-container
          height: 555px
       &__container
@@ -441,7 +498,7 @@
       &__img-wrap
          max-width: 70px
          max-height: 81px 
-         margin-bottom: 13px
+         margin-bottom: 18px
       &__text
          font-style: normal
          font-weight: normal
@@ -452,11 +509,14 @@
          font-feature-settings: "locl" 0
          margin-bottom: 0
       &__client
-         width: 240px
+         width: 200px
          margin: auto
    .story
+      margin-bottom: 45px
       &__container
          max-width: 290px
+      &__badge
+         margin-bottom: 15px
       &__title
          font-size: 28px
          line-height: 36px
@@ -475,23 +535,25 @@
       &__item
          margin-bottom: 24px
    .slide-button--next
-      right: 28%
-      top: 215px   
+      right: 30%
+      top: 220px  
    .slide-button--prev
       left: 28%
-      top: 215px   
+      top: 220px
    .newsletter
+      padding-top: 60px
+      height: 305px
+      margin-bottom: 46px
       &__container
-         max-width: 280px
-      padding-top: 64px
       padding-bottom: 48px
       &__title
          font-size: 28px
          line-height: 36px
-         margin-bottom: 36px
+         margin-bottom: 28px
       &__text
          font-size: 16px
          line-height: 28px
+         margin-bottom: 16px
       &__form
          overflow: visible
          width: 280px
@@ -499,7 +561,7 @@
          width: 230px
          padding-left: 50px
       &__button
-         margin-top: 10px
+         margin-top: 6px
          position: static
          width: 100%
    .footer
@@ -514,7 +576,7 @@
          margin: auto
       &__logo
          margin: auto
-         margin-bottom: 16px
+         margin-bottom: 4px
       &__title
          font-size: 16px
          line-height: 22px
@@ -524,10 +586,12 @@
          line-height: 20px
          margin-bottom: 15px
       &__block
-         margin-bottom: 30px
+         margin-bottom: 20px
       &__contacts
          margin-bottom: 0
       &__right
-         margin-bottom: 30px
+         margin-bottom: 52px
       &__text
          margin-bottom: 16px
+      &__list
+         margin-bottom: 12px
